@@ -1,0 +1,175 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+.header_image {
+    position: relative;
+    width: 100%;
+    max-height: 450px; 
+    overflow: hidden;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+
+.titulo-principal {
+    position: absolute;
+    color: white;
+    font-size: 80px;
+    text-shadow: 3px 3px 8px #d6bdbd;
+    font-weight: normal;
+}
+
+.titulo-principal:hover{
+    text-shadow: 3px 3px 8px #dc6c04;
+}
+
+.informacion-general span{
+    font-weight: bold;
+}
+
+.general {
+    display:  flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 25px auto;
+    
+}
+
+.general h2, .curiosidades h2{
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.general > div, .general > article {
+    flex: 1; 
+}
+
+.imagen-general img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.imagen-general{
+    display: flex;              
+    justify-content: center;   
+    align-items: center;
+}
+
+.general article{
+    text-align: justify;
+}
+
+.personajes h2{
+    text-align: center;
+    font-size: 50px;
+}
+
+
+.personajes {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    margin-top: 20px;
+}
+
+.personajes > div {
+    display: flex;
+    justify-content: center; 
+    gap: 30px;
+}
+
+.personajes article {
+    text-align: center;
+}
+
+.personajes img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff; 
+}
+
+.curiosidades {
+    display: flex;
+    gap: 30px;                 
+    align-items: center;    
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    font-size: 18px;
+}
+
+
+.curiosidades article {
+    flex: 1;
+}
+
+.curiosidades div{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.curiosidades img{
+    width: 70%;
+    height: auto;
+}
+
+.frase {
+    font-size: 30px;
+    font-style: italic;
+    text-shadow: 3px 3px 8px #8e4404;
+    padding: 5px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.curiosidades .frase:hover{
+    text-shadow: 3px 3px 8px #3753c3;
+}
+
+body{
+    background-color: #fbf4e9;
+    font-family:'Times New Roman', serif;
+}
+
+.division {
+    width: 100%;                
+    height: 80px;                    
+    background-image: url("../img/hojas.png");
+    background-repeat: repeat-x;
+    background-position: center;  
+    background-size: auto 60%;
+}
+
+ul{
+    width: 300px;
+    margin: 0 auto;
+}
+
+#cita{
+    text-align: center;
+    font-size: medium;
+    margin: 15px;
+}
+

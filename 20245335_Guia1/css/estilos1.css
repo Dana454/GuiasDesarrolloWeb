@@ -1,0 +1,31 @@
+
+body { 
+    background-color:lightblue;
+}
+
+div {
+    font-size: 20px;
+}
+
+div h2{
+    text-decoration: underline;
+    color: white;
+}
+
+#ej1_p1{
+    color: navy;
+    font-weight: bold;
+}
+
+#ej1_p2{
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+#ej1_p3{
+    font-size: 12px;
+}
+
+.ej1_span {
+    font-style: italic;
+}
