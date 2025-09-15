@@ -89,16 +89,6 @@ header > h1:hover {
     line-height: 3;
 }
 
-.actualidad > div img,
-.cantanteFavorito > div img {
-    order: 1;
-}
-
-.actualidad > p,
-.cantanteFavorito > p {
-    order: 2;
-}
-
 .interes > ul {
     list-style: disc;
     padding-left: 20px;
