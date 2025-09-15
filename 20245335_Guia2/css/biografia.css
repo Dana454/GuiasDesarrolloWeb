@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+body {
+    background-color: rgb(246, 238, 228);
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 120px 0 80px 0;
+}
+
+header > h1 {
+    background: radial-gradient(circle, rgba(235, 96, 96, 1) 27%, rgba(204, 14, 93, 1) 53%, rgba(233, 148, 222, 1) 73%);
+    color: #efefef;
+    text-align: center;
+    font-size: 4rem;
+    padding: 30px 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-weight: 100;
+    font-family: "Cookie", cursive;
+}
+
+
+header > h1:hover {
+    text-shadow: 3px 3px 8px #fff;
+}
+
+.info {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.info h3 {
+    text-align: center;
+    font-size: 18px;
+    background-color: rgba(249, 163, 237, 0.25);
+    color: #7e0a50;
+    margin-bottom: 15px;
+    padding: 5px 0;
+}
+
+.info h3:hover {
+    text-shadow: 3px 3px 8px rgb(107, 3, 81);
+}
+
+.datoInicial, .formacion, .actualidad, .interes, .cantanteFavorito {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.datoInicial > div img,
+.formacion > div img,
+.actualidad > div img,
+.interes > div img,
+.cantanteFavorito > div img {
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.datoInicial > p,
+.formacion > p,
+.actualidad > p,
+.interes > ul,
+.cantanteFavorito > p {
+    flex: 0 1 45%;
+    line-height: 1.6;
+    color: #300101;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.datoInicial span {
+    font-weight: bold;
+}
+
+.datoInicial p {
+    line-height: 3;
+}
+
+.actualidad > div img,
+.cantanteFavorito > div img {
+    order: 1;
+}
+
+.actualidad > p,
+.cantanteFavorito > p {
+    order: 2;
+}
+
+.interes > ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.info a[href*="youtube"] {
+    display: block;
+    text-align: center;
+    color: #7e0a50;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.info a[href*="youtube"]:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: radial-gradient(circle, rgba(235, 96, 96, 1) 27%, rgba(204, 14, 93, 1) 53%, rgba(233, 148, 222, 1) 73%);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.info p {
+    text-align: justify;
+    font-size: 12px;
+}
