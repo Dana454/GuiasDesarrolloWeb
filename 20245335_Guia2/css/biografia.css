@@ -57,11 +57,7 @@ header > h1:hover {
     justify-content: center;
 }
 
-.datoInicial > div img,
-.formacion > div img,
-.actualidad > div img,
-.interes > div img,
-.cantanteFavorito > div img {
+.info img {
     width: 250px;
     height: auto;
     border-radius: 15px;
@@ -75,7 +71,7 @@ header > h1:hover {
 .interes > ul,
 .cantanteFavorito > p {
     flex: 0 1 45%;
-    line-height: 1.6;
+    line-height: 1.5;
     color: #300101;
     margin: 0;
     padding: 0 10px;
