@@ -7,10 +7,20 @@ h1{
 }
 
 
-ul li{
+ul li::marker{
     color: rgb(255, 0, 208);
 }
 
-a{
+ul li a{
     color: rgb(100, 39, 6);
+    text-decoration: none;
+}
+
+ul li a:hover{
+    text-decoration: underline;
+    color: #610303;
+}
+
+ul li {
+     color: rgb(139, 0, 95);
 }
