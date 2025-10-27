@@ -1,15 +1,114 @@
-body{
-    background-color: rgb(246, 236, 224);
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
 }
 
-h1{
+body{
+    background-color: whitesmoke;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+
+header{
+    background-color: #FDCBDA;
+    padding: 2.5rem;
+}
+
+header h1{
+    text-align: center;
+    color: rgb(188, 4, 89);
+    font-family: "Gabriela", sans-serif;
+}
+
+.datos {
+    display: flex;
+    gap: 1.2rem;
+    margin: 1.5rem 2rem;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: #444343;
+}
+
+#foto, .info{
+    flex: 1;
+}
+
+
+#foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#foto img{
+    width: auto;
+    height: 45vh;
+    border-radius: 10px;
+    box-shadow: 0 0.2rem 0.5rem rgba(55, 45, 49, 0.721);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+span{
+    font-weight: 500;
+    color: #A62451;
+}
+
+h2{
+    margin: 2rem;
+    text-align: center;
+}
+
+h2, h4{
     color: rgb(188, 4, 89);
 }
 
-
-ul li::marker{
-    color: rgb(255, 0, 208);
+.contenedor-guias{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 0.85rem;
+    justify-content: center;
 }
+
+.contenedor-guias .guia{
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(230, 54, 154, 0.307);
+    padding: 2rem;
+}
+
+.guia h3{
+    color: #760841;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0.5em;
+}
+
+.descripcion-guia {
+  color: #444343;
+  text-align: center;
+  line-height: 1.5;
+  margin: 1.5rem 0;
+}
+
+.guia ul li::marker{
+    color: rgb(255, 0, 208);
+    line-height: 2.5;
+}
+
 
 ul li a{
     color: rgb(100, 39, 6);
@@ -18,9 +117,152 @@ ul li a{
 
 ul li a:hover{
     text-decoration: underline;
-    color: #610303;
+    color:#ED6EAD;
 }
 
 ul li {
      color: rgb(139, 0, 95);
+}
+
+.guia ul ul {
+  margin-left: 1.5rem;
+  list-style-type: circle;
+}
+
+
+/* Grid FODA */
+
+.foda{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto 2.5rem auto;
+}
+
+.foda div{
+    border-radius: 10px;
+    padding: 1.5rem;
+    background-color: rgba(239, 191, 208, 0.596);
+    box-shadow: 0 0.2rem 0.5rem rgba(55, 45, 49, 0.508);
+    font-size: 0.85rem;
+    text-align: center;
+    line-height: 1.5;
+    color: #444343;
+}
+
+.foda div span{
+    font-weight: 600;
+    color: #BC0459;
+    font-size: 0.94rem;
+}
+footer{
+    font-size: 0.8rem;
+    margin: 0.5rem 0 0.5rem 0.5rem;
+    font-weight: 600;
+}
+
+
+/*Telefono*/
+@media screen and (max-width: 480px){
+ body{
+    font-size: 14px; 
+    padding: 0 0.5rem;
+  }
+
+  header {
+    padding: 1.5rem;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  .datos {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    margin: 1rem auto;
+    gap: 0.8rem;
+    max-width: 95%;
+  }
+
+  #foto img {
+    height: 30vh;
+  }
+
+  .info {
+    padding: 0 1rem;
+  }
+
+  .info p {
+    line-height: 1.4;
+    font-size: 0.9rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+  }
+
+  .contenedor-guias {
+    grid-template-columns: 1fr; 
+    max-width: 95%;
+    padding: 1rem;
+  }
+
+  .guia {
+    padding: 1.2rem;
+  }
+
+  .guia h3 {
+    font-size: 1.2rem;
+  }
+
+  .descripcion-guia {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  ul li a {
+    font-size: 0.9rem;
+  }
+
+  .foda {
+    grid-template-columns: 1fr;
+    max-width: 95%;
+  }
+
+  .foda div {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 0.75rem;
+    margin-top: 1.5rem;
+  }
+   
+}
+
+
+/*Tablet*/
+@media screen and (min-width: 481px) and (max-width: 768px){
+    .datos {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .contenedor-guias {
+    grid-template-columns: 1fr 1fr;
+    max-width: 90%;
+  }
+
+  .foda {
+    grid-template-columns: 1fr 1fr;
+    max-width: 80%;
+  }
 }
