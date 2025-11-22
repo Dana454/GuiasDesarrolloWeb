@@ -104,6 +104,16 @@ h2, h4{
   margin: 1.5rem 0;
 }
 
+p a{
+  text-decoration: none;
+  color: rgb(100, 39, 6);
+}
+
+p a:hover{
+  color: #ED6EAD;
+  text-decoration: underline;
+}
+
 .guia ul li::marker{
     color: rgb(255, 0, 208);
     line-height: 2.5;
