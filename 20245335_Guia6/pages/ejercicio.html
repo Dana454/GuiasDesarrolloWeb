@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Validación Ficha Estudiante</title>
+</head>
+<body>
+
+<h2>Ficha de Estudiante</h2>
+
+<form id="formEstudiante">
+    <label>Carnet:</label><br>
+    <input type="text" id="carnet" placeholder="AB001"><br><br>
+
+    <label>Nombre completo:</label><br>
+    <input type="text" id="nombre"><br><br>
+
+    <label>DUI:</label><br>
+    <input type="text" id="dui" placeholder="12345678-9"><br><br>
+
+    <label>NIT:</label><br>
+    <input type="text" id="nit" placeholder="1234-123456-123-1"><br><br>
+
+    <label>Fecha de nacimiento (dd/mm/yyyy):</label><br>
+    <input type="text" id="fecha" placeholder="dd/mm/yyyy"><br><br>
+
+    <label>Correo electrónico:</label><br>
+    <input type="text" id="correo"><br><br>
+
+    <label>Edad:</label><br>
+    <input type="text" id="edad"><br><br>
+
+    <button type="button" onclick="validar()">Validar</button>
+</form>
+
+<p id="mensaje"></p>
+
+
+<script src="../js/ejercicio.js"></script>
+
+</body>
+</html>
